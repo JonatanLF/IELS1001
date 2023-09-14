@@ -15,4 +15,5 @@ void lys()
 void loop()
 {
     lys();
+    delay(250);
 }
