@@ -1,0 +1,7 @@
+{
+    "board": "arduino:avr:uno",
+    "output": ".arduino/output",
+    "sketch": "Prog fra 14.09.2023/gitTestTavle/gitTestTavle.ino",
+    "port": "COM5",
+    "programmer": "avrisp"
+}
