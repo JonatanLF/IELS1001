@@ -28,9 +28,8 @@ int sensorSnitt()
 
 void lys()
 {
-    int hastighet = map(sensorSnitt(), 0, 900, 100, 1500);
+    int hastighet = map(sensorSnitt(), 0, 1023, 100, 1500);
     currTime = millis();
-    Serial.println(hastighet);
     if(currTime - prevTime >= hastighet){
         ledState = !ledState;
         prevTime = currTime;
