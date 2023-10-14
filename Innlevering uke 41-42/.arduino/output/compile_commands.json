@@ -23,10 +23,10 @@
    "-DARDUINO_ARCH_AVR",
    "-IC:\\Users\\jonat\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino",
    "-IC:\\Users\\jonat\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\variants\\standard",
-   "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\.arduino\\output\\sketch\\innlevering2.ino.cpp",
+   "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\.arduino\\output\\sketch\\innlevering1.ino.cpp",
    "-o",
-   "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\.arduino\\output\\sketch\\innlevering2.ino.cpp.o"
+   "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\.arduino\\output\\sketch\\innlevering1.ino.cpp.o"
   ],
-  "file": "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\.arduino\\output\\sketch\\innlevering2.ino.cpp"
+  "file": "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\.arduino\\output\\sketch\\innlevering1.ino.cpp"
  }
 ]
