@@ -7,7 +7,7 @@ int sammenlagt = 0;
 unsigned long currTime;
 unsigned long prevTime = 0;
 int ledState = 0x0;
-uint32_t sensorListe[] = {};
+uint32_t sensorListe[] = {0, 0, 0, 0, 0};
 
 void setup()
 {
@@ -30,6 +30,7 @@ void lys()
 {
     int hastighet = map(sensorSnitt(), 0, 900, 100, 1500);
     currTime = millis();
+    Serial.println(hastighet);
     if(currTime - prevTime >= hastighet){
         ledState = !ledState;
         prevTime = currTime;
@@ -40,5 +41,4 @@ void lys()
 void loop()
 {
     lys();
-    Serial.println(ledState);
 }

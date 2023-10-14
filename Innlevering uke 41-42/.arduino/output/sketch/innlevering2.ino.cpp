@@ -8,7 +8,7 @@ int sammenlagt = 0;
 unsigned long currTime;
 unsigned long prevTime = 0;
 int ledState = LOW;
-uint32_t sensorListe[] = {};
+uint32_t sensorListe[] = {0, 0, 0, 0, 0};
 
 #line 11 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
 void setup();
@@ -16,7 +16,7 @@ void setup();
 int sensorSnitt();
 #line 28 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
 void lys();
-#line 39 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
+#line 40 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
 void loop();
 #line 11 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
 void setup()
@@ -40,6 +40,7 @@ void lys()
 {
     int hastighet = map(sensorSnitt(), 0, 900, 100, 1500);
     currTime = millis();
+    Serial.println(hastighet);
     if(currTime - prevTime >= hastighet){
         ledState = !ledState;
         prevTime = currTime;
@@ -50,5 +51,4 @@ void lys()
 void loop()
 {
     lys();
-    Serial.println(ledState);
 }
