@@ -1,5 +1,5 @@
-C:\Users\jonat\OneDrive\Dokumenter\!VisualStudioCode\Innlevering\ uke\ 41-42\.arduino\output\sketch\innlevering.ino.cpp.o: \
- C:\Users\jonat\OneDrive\Dokumenter\!VisualStudioCode\Innlevering\ uke\ 41-42\.arduino\output\sketch\innlevering.ino.cpp \
+C:\Users\jonat\OneDrive\Dokumenter\!VisualStudioCode\Innlevering\ uke\ 41-42\.arduino\output\sketch\innlevering2.ino.cpp.o: \
+ C:\Users\jonat\OneDrive\Dokumenter\!VisualStudioCode\Innlevering\ uke\ 41-42\.arduino\output\sketch\innlevering2.ino.cpp \
  C:\Users\jonat\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino/Arduino.h \
  C:\Users\jonat\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino/binary.h \
  C:\Users\jonat\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino/WCharacter.h \

@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#line 1 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering\\innlevering.ino"
+#line 1 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
 /*Under setter jeg hvilke pins koden skal bruke og gir hvert pin et nytt navn tilsvarende funksjonen den har*/
 #define rodLED 13
 #define gronnLED 11
@@ -16,17 +16,17 @@ int lysVekselState = LOW;
 /*I setup starter jeg Serial slik at jeg kan printe ting ut på skjermen for testing og fiksing av koden.
 Deretter bestemmer jeg om de forskjellige komponentene som er tilkoblet arduino-pinsene skal gi oss INPUT eller
 OUTPUT.*/
-#line 17 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering\\innlevering.ino"
+#line 17 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
 void setup();
-#line 33 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering\\innlevering.ino"
+#line 33 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
 void knapp();
-#line 56 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering\\innlevering.ino"
+#line 56 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
 void gulLys();
-#line 67 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering\\innlevering.ino"
+#line 67 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
 void andreLys();
-#line 73 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering\\innlevering.ino"
+#line 73 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
 void loop();
-#line 17 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering\\innlevering.ino"
+#line 17 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
 void setup()
 {
     Serial.begin(9600);

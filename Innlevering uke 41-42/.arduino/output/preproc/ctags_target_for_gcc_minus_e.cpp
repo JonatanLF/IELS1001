@@ -1,4 +1,4 @@
-# 1 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering\\innlevering.ino"
+# 1 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
 /*Under setter jeg hvilke pins koden skal bruke og gir hvert pin et nytt navn tilsvarende funksjonen den har*/
 
 
@@ -17,7 +17,7 @@ int lysVekselState = 0x0;
 Deretter bestemmer jeg om de forskjellige komponentene som er tilkoblet arduino-pinsene skal gi oss INPUT eller
 
 OUTPUT.*/
-# 17 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering\\innlevering.ino"
+# 17 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
 void setup()
 {
     Serial.begin(9600);
@@ -41,7 +41,7 @@ lyset, men jeg ønsket at knappen skulle kunne endre forskjellige lys. For å op
 seg til millis konstant når knappen ikke blir rørt. I tillegg oppdaterer "currTime" seg til millis så lenge
 
 knappen holdes inne. Dette betyr at "currTime" - "prevTime" tilsvarer tiden knappen har blitt holdt inne.*/
-# 33 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering\\innlevering.ino"
+# 33 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
 void knapp()
 {
     int buttonState = digitalRead(2);
@@ -77,7 +77,7 @@ void gulLys()
 /*Dette er koden som bestemmer om Rødt eller grønt lys er av eller på. Denne koden kunne blitt skrevet
 
 inni knapp-koden, men jeg personlig liker å skille de to.*/
-# 67 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering\\innlevering.ino"
+# 67 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
 void andreLys()
 {
     digitalWrite(13, lysVekselState);
