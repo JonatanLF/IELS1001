@@ -3,9 +3,11 @@
 
 
 int snittMaling;
+int sammenlagt = 0;
 unsigned long currTime;
 unsigned long prevTime = 0;
 int ledState = 0x0;
+uint32_t sensorListe[] = {};
 
 void setup()
 {
@@ -16,10 +18,10 @@ void setup()
 
 int sensorSnitt()
 {
-    snittMaling = 0;
-    int sammenlagt = 0;
     for(int i = 0; i < 5; i++){
-        sammenlagt += analogRead(A5);
+        sammenlagt -= sensorListe[i];
+        sensorListe[i] = analogRead(A5);
+        sammenlagt += sensorListe[i];
     }
     return snittMaling = sammenlagt / 5;
 }
@@ -38,4 +40,5 @@ void lys()
 void loop()
 {
     lys();
+    Serial.println(ledState);
 }

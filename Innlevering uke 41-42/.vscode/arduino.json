@@ -3,5 +3,5 @@
     "programmer": "avrisp",
     "output": ".arduino/output",
     "sketch": "innlevering2/innlevering2.ino",
-    "port": "COM8"
+    "port": "COM6"
 }

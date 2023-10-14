@@ -2,9 +2,11 @@
 #define led 7
 
 int snittMaling;
+int sammenlagt = 0;
 unsigned long currTime;
 unsigned long prevTime = 0;
 int ledState = LOW;
+uint32_t sensorListe[] = {};
 
 void setup()
 {
@@ -15,10 +17,10 @@ void setup()
 
 int sensorSnitt()
 {
-    snittMaling = 0;
-    int sammenlagt = 0;
     for(int i = 0; i < 5; i++){
-        sammenlagt += analogRead(sensor);
+        sammenlagt -= sensorListe[i];
+        sensorListe[i] = analogRead(sensor);
+        sammenlagt += sensorListe[i];
     }
     return snittMaling = sammenlagt / 5;
 }
@@ -37,4 +39,5 @@ void lys()
 void loop()
 {
     lys();
+    Serial.println(ledState);
 }

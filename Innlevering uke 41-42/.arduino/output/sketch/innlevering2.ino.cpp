@@ -4,19 +4,21 @@
 #define led 7
 
 int snittMaling;
+int sammenlagt = 0;
 unsigned long currTime;
 unsigned long prevTime = 0;
 int ledState = LOW;
+uint32_t sensorListe[] = {};
 
-#line 9 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
+#line 11 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
 void setup();
-#line 16 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
+#line 18 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
 int sensorSnitt();
-#line 26 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
+#line 28 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
 void lys();
-#line 37 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
+#line 39 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
 void loop();
-#line 9 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
+#line 11 "C:\\Users\\jonat\\OneDrive\\Dokumenter\\!VisualStudioCode\\Innlevering uke 41-42\\innlevering2\\innlevering2.ino"
 void setup()
 {
     Serial.begin(9600);
@@ -26,10 +28,10 @@ void setup()
 
 int sensorSnitt()
 {
-    snittMaling = 0;
-    int sammenlagt = 0;
     for(int i = 0; i < 5; i++){
-        sammenlagt += analogRead(sensor);
+        sammenlagt -= sensorListe[i];
+        sensorListe[i] = analogRead(sensor);
+        sammenlagt += sensorListe[i];
     }
     return snittMaling = sammenlagt / 5;
 }
@@ -48,4 +50,5 @@ void lys()
 void loop()
 {
     lys();
+    Serial.println(ledState);
 }
